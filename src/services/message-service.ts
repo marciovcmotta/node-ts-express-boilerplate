@@ -23,11 +23,11 @@ export const getMessageByIdService = async (id: number) => {
 
     if(data){
         response.status = StatusCode.OK;
+        response.body = data;
     }else{
         response.status = StatusCode.NoContent;
-    }
-
-    response.body = data;
+        response.body = { message: "no content"};
+    }    
 
     return response;
 }

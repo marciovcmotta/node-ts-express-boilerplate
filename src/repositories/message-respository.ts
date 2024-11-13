@@ -1,15 +1,18 @@
 import { MessageModel } from "../models/message-model";
+import fs from "fs/promises";
 
-const database: MessageModel[] = [
-    { id: 1, message: "Hello, World!" },
-    { id: 2, message: "Happy coding :)" }
-];
+let database: MessageModel[] = [];
 
 export const findAllMessages = async (): Promise<MessageModel[]> => {
+    if(database.length === 0){
+        const jsonFile = await fs.readFile("./src/data/messages.json", "utf-8");
+        database = JSON.parse(jsonFile);
+    }
+    
     return database;
 }
 
-export const findMessageById = async (id: number): Promise<MessageModel | undefined> => {
+export const findMessageById = async (id: number) => {
     return database.find(message => message.id === id);
 }
 

@@ -1,0 +1,15 @@
+[
+    { "id": 1, "message": "Hello, World!" },
+    { "id": 2, "message": "Happy coding :)" },
+    { "id": 3, "message": "The quick brown fox jumps over the lazy dog"},
+    { "id": 4, "message": "JavaScript is awesome!" },
+    { "id": 5, "message": "Keep learning and growing." },
+    { "id": 6, "message": "Believe you can and you're halfway there." },
+    { "id": 7, "message": "The only way to do great work is to love what you do." },
+    { "id": 8, "message": "Strive for progress, not perfection." },
+    { "id": 9, "message": "Challenges are opportunities for growth." },
+    { "id": 10, "message": "The future belongs to those who believe in the beauty of their dreams." },
+    { "id": 11, "message": "Success is not final, failure is not fatal: it is the courage to continue that counts." },
+    { "id": 12, "message": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." },
+    { "id": 13, "message": "Life is what happens when you're busy making other plans." } 
+]
