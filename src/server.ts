@@ -1,4 +1,7 @@
 import createApp from "./app";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 const server = createApp();
 
